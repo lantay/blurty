@@ -44,14 +44,14 @@
           
          <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body" >
-           <%= f.input :saying, :size=>'50', label: "What is the saying you would like to add?", placeholder: 'Fear is the disease. Hustle is the antidote'%>
+           <%= f.input :saying, :size=>'50', label: "Share your story", placeholder: 'Write your story here'%>
 
             <br />
-           <%= f.input :author, label: "Who is the author of the quote?", placeholder: 'Travis Kalanick'%>
+           <%= f.input :author, label: "Tell us your name", placeholder: 'Write your name and location, if you wish'%>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <%= f.submit 'Add Quote', class: 'btn btn-danger' %>
+            <%= f.submit 'Add Story', class: 'btn btn-danger' %>
           </div>
         <% end %>
 
@@ -74,8 +74,8 @@
 
 <div class="footer">
   <div class="container">
-    <div class="col-xs-6"><
-      <%=link_to "I'd like to hear another'", root_path, class: 'next-quote'%>
+    <div class="col-xs-6">
+      <%=link_to "I'd like to hear another", root_path, class: 'next-quote'%>
       
     </div>
       <div class="col-xs-12 col-sm-6 footer-blurb">    Started by Mason Lantay of Carrboro, North Carolina<br />
