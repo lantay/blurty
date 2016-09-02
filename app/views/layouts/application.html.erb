@@ -20,11 +20,11 @@
       </div>
       <% end %>
     </div>
- <div class="col-sm-4 hidden-xs slogan">        Blurty. Enter quotes by clicking the "Add" link, and I'll spit one of them out randomly whenever the page is refreshed or you click the "Next Quote!" link in the bottom left
+ <div class="col-sm-4 hidden-xs slogan">        Blurty. Enter quotes by clicking the "Add" link, and the site will spit one of them out randomly whenever the page is refreshed or whenever you click the "Next Quote!" link in the bottom left
 
     </div>
     <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">      <!-- Button trigger modal -->
-      <%= link_to 'Add Quote', '#', data: {toggle: 'modal', target: '#myModal'} %>
+      <%= link_to 'Add', '#', data: {toggle: 'modal', target: '#myModal'} %>
         &nbsp;&nbsp;
       <%= link_to 'About', about_path %>
     </div>
@@ -44,10 +44,10 @@
           
          <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body" >
-           <%= f.input :saying, :size=>'50', label: "Enter quote here", placeholder: 'Quote'%>
+           <%= f.input :saying, :size=>'50', label: "Enter quote here", placeholder: 'Do all things with love.'%>
 
             <br />
-           <%= f.input :author, label: "Enter the name of the person who said the quote here", placeholder: 'Name of person who said quote'%>
+           <%= f.input :author, label: "Enter the name of the person who said the quote here", placeholder: 'Og Mandino'%>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
